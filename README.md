@@ -15,17 +15,17 @@ This project aims to develop a robust and accurate deep learning system for the 
 
 2. 🖼️ **Approaches for Image Processing**
 
-### 🔹 Approach 1
-- The main image was processed in chunks using dynamic strides.
-- Only informative regions were resized to 256×256 and converted to RGB format.
-- An ensemble of four pretrained models was used for prediction.
-- However, this approach encountered an error during submission to the hidden test set in the competition.
-
-### 🔹 Approach 2
-- High-resolution images were split into smaller square patches (224×224) to capture localized features effectively.
-- The `pyvips` library enabled faster and efficient image preprocessing.
-- This method successfully processed and submitted predictions for the hidden test set.
-- Due to time limitations, only the Inception model was implemented for this approach.
+      🔹 Approach 1
+      - The main image was processed in chunks using dynamic strides.
+      - Only informative regions were resized to 256×256 and converted to RGB format.
+      - An ensemble of four pretrained models was used for prediction.
+      - However, this approach encountered an error during submission to the hidden test set in the competition.
+      
+      🔹 Approach 2
+      - High-resolution images were split into smaller square patches (224×224) to capture localized features effectively.
+      - The `pyvips` library enabled faster and efficient image preprocessing.
+      - This method successfully processed and submitted predictions for the hidden test set.
+      - Due to time limitations, only the Inception model was implemented for this approach.
 
 
 3. **Model Selection & Architecture**
